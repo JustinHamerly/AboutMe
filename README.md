@@ -11,5 +11,4 @@ This is my code 201 About Me project
 * Any Links you used as reference
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* This page asks 5 yes/no questions to the user when they visit the site.  It produces an alert depending on their responses to these yes/no questions.

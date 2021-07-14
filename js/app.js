@@ -70,3 +70,25 @@ if (youSingAns === 'yes'||youSingAns === 'y'){
 } else {
   alert('I can only take that as a yes.  I think... ? ... ' + userName + '?');
 }
+
+// 6th Question - Number Guessing game.  Alert if value is too high or too low.  Give 4 opportunities for the correct answer.  Tell user correct answer after 4 guesses.
+
+let rNumber = Math.floor((Math.random() * 10000000) + 1);
+//declares the variable rNumber and assigns it to a random number from 1 - 1Million.  Math.random() picks a number from 0 (inc) to 1 (exc) and multiplies it by a million.  then we add 1 to eliminate 0 and add 10,000,000 to the possible solutions.  Math.floor will take that number and drop all the decimals rounding down to the nearest whole number.
+
+let guestNumber = prompt('Guess what number I am thinking of between 1-10,000,000  Good luck!')
+//declaration of variable guestNumber and assigning it to the response to the prompt for guessing a number.
+
+for (let i = 1; i < 5; i++){
+  if (guestNumber === rNumber){
+    alert('Wow!  Have you considered the Lottery?');
+    break;
+  } else if(guestNumber > rNumber && guestNumber <= 10000000) {
+    alert('Attempt ${i}: Too High! Try Again. You have ' + (4-i) + 'attempts left.');
+  } else if (guestNumber < rNumber && guestNumber >= 1){
+    alert('Attempt ${i}: Too Low! Try Again. You have ' + (4-i) + 'attempts left.');
+  } else {
+    i -= 1;
+    alert('Please only pick numbers from 1-10,000,000');
+  }
+}

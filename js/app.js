@@ -87,7 +87,7 @@ let rNumber = Math.floor((Math.random() * 10000000) + 1);
 let guestNumber = '0';
 
 for (let i = 1; i < 5; i++){
-  guestNumber = prompt('What number I am thinking of between 1 - 10,000,000? GOOD LUCK!');
+  guestNumber = parseInt(prompt('What number I am thinking of between 1 - 10,000,000? GOOD LUCK!'));
   console.log('Attempt ' + i + ': ' + guestNumber);
   //declaration of variable guestNumber and assigning it to the response to the prompt for guessing a number.
   if (guestNumber === rNumber){
@@ -103,12 +103,9 @@ for (let i = 1; i < 5; i++){
     alert('Please only pick numbers from 1-10,000,000');
   }
 }
-
-
 if (guestNumber !== rNumber){
   alert('The correct answer was: ' + rNumber);
 }
-//guestNumber and rNumber have to be compared loosely and not strictly because the prompt returns a string and rNumber is a number and not a string.
 
 //Guess answer to a question with multiple correct answers.  give the user 6 attempts at guessing correctly. game ends when user guesses a correct answer or running out of attempts.  then, display all the correct answers
 
@@ -146,4 +143,4 @@ if (!correctPet){
 }
 // Alerts user that they have used all their guesses and what the correct answers are.
 
-alert('You have answered ' + guestScore + " out of 7 questions correctly...  but grades don't matter here!");
+alert('You have answered ' + guestScore + ' out of 7 questions correctly...  but grades don\'t matter here!');

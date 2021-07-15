@@ -9,6 +9,8 @@ alert('Nice to meet you, ' + userName);
 
 let guestScore = 0;
 
+
+function yesNoQuestions(){
 // 5 yes/no questions about Justin
 
 let likeParty = prompt('Does Justin like to party?');
@@ -77,7 +79,9 @@ if (youSingAns === 'yes'||youSingAns === 'y'){
 } else {
   alert('I can only take that as a yes.  I think... ? ... ' + userName + '?');
 }
+}
 
+function guessingGame(){
 // Number Guessing game.  Alert if value is too high or too low.  Give 4 opportunities for the correct answer.  Tell user correct answer after 4 guesses.
 
 let rNumber = Math.floor((Math.random() * 10000000) + 1);
@@ -106,7 +110,9 @@ for (let i = 1; i < 5; i++){
 if (guestNumber !== rNumber){
   alert('The correct answer was: ' + rNumber);
 }
+}
 
+function petQuestion(){
 //Guess answer to a question with multiple correct answers.  give the user 6 attempts at guessing correctly. game ends when user guesses a correct answer or running out of attempts.  then, display all the correct answers
 
 const petName = ['chomp','ghost', 'vladimir'];
@@ -141,6 +147,11 @@ while(guessCount > 0 && !correctPet){
 if (!correctPet){
   alert('sorry, you have no more attempts!  Correct answers would have been Ghost, Chomp or Vladimir.');
 }
+}
 // Alerts user that they have used all their guesses and what the correct answers are.
+yesNoQuestions();
+guessingGame();
+petQuestion();
 
 alert('You have answered ' + guestScore + ' out of 7 questions correctly...  but grades don\'t matter here!');
+

@@ -3,7 +3,7 @@ body *{
 }
 
 body{
-  background-color: #cfa0a5;
+  background-color: #a3c5db;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-size: xx-large;
+  color: #416470;
 }
 
 h2{
@@ -28,30 +29,45 @@ p, ol, ul{
   color: #49565A
 }
 
+* button {
+  background-color: #91e6f1;
+  border: solid #43acc4 3px;
+  color: #49565A;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+* button:hover{
+  background-color: #f1f1b7;
+  color: #232b2e;
+}
+
 section {
   background-color: #f1f091;
   padding: 5px;
-  border: 20px #43acc4 ridge;
-  margin: 40px 10px;
+  border: 15px #43acc4 ridge;
+  margin: 30px 10px;
 }
 
 #dessert {
-  float: left;
-  width: 30%;
+  width: 30% ;
 }
 
 #info {
-  float: left;
-  width: 65%;
+  width: 66%;
 }
 
 #info, #dessert{
+  float: left;
   display: inline;
   align-items: center;
+  margin: 30 px 10px auto;
 }
 
 h1, h3{
-  border: 20px #43acc4 ridge;
+  border: 15px #43acc4 ridge;
   margin: 20px 10px;
   padding: 30px;
   text-align: center;
@@ -91,7 +107,7 @@ div {
   width: 100%;
   height: 75%;
   overflow: hidden;
-  border:5px solid #3894A8
+  border:5px solid #3894A8;
 }
 
 div img {
